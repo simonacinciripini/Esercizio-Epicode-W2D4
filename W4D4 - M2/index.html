@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prenotazione biglietti cinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Prenota i tuoi biglietti</h1>
+
+        <section class="booking">
+            <label for="movie-select">Film</label>
+            <select id="movie-select"></select>
+
+            <label for="tickets-input">Numero di biglietti</label>
+            <input type="number" id="tickets-input" min="1" value="1">
+
+            <button id="book-btn">Prenota</button>
+        </section>
+
+        <p id="result"></p>
+        <p id="total-box"></p>
+        <p>Biglietti prenotati finora: <strong id="total-booked">0</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Titolo</th>
+                    <th>Genere</th>
+                    <th>Prezzo</th>
+                    <th>Posti disponibili</th>
+                </tr>
+            </thead>
+            <tbody id="movies-table-body"></tbody>
+        </table>
+    </main>
+
+    <script src="esercizio.js"></script>
+</body>
+</html>
